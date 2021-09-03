@@ -13,9 +13,9 @@ int main() {
 		getline(cin, s);
 		bool checker = true;
 		// check if the size of string is EXACTLY equal to 5 and the middle element is '-'
-		// the first character of the source cell and of the destination cell must be a 
+		// the first character of the source cell and the destination cell must be a 
 		// letter between 'a' and 'h' (inclusive), also, the second character of the source 
-		// cell and destination cell must be number between '1' and '8' (inclusive)
+		// cell and the destination cell must be a number between '1' and '8' (inclusive)
 		if ((int) s.size() != 5 || s[2] != '-') {
 			checker = false;
 		} else if (s[0] < 'a' || s[0] > 'h' || s[3] < 'a' || s[3] > 'h') {
